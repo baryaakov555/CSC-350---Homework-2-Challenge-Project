@@ -1,0 +1,13 @@
+# VS / .NET
+.vs/
+.vscode/
+bin/
+obj/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userprefs
+*.cache
+*.ide
+*.log
