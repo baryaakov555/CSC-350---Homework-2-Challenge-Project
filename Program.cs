@@ -53,7 +53,7 @@ foreach (string name in studentNames)
 
     ExtraCreditsBonusPoints = sumOfExtraCredits / examAssignments;
 
-    overAllGrade = (decimal)aveageOfExamScores + ExtraCreditsBonusPoints;
+    overAllGrade = aveageOfExamScores + ExtraCreditsBonusPoints;
 
     if (overAllGrade >= 97)
         currectStudentLetterGrade = "A+";
@@ -82,7 +82,7 @@ foreach (string name in studentNames)
     else
         currectStudentLetterGrade = "F";
 
-    Console.WriteLine($"{currentStudent}\t\t{aveageOfExamScores}\t\t\t\t{overAllGrade}  {currectStudentLetterGrade}\t\t{ExtraCreditsBonusPoints}");
+    Console.WriteLine($"{currentStudent}\t\t{aveageOfExamScores}\t\t\t\t{overAllGrade}  ||  {currectStudentLetterGrade}\t\t{aveageOfExamScores} ({ExtraCreditsBonusPoints} pts)");
 }
 
 Console.ReadLine();
